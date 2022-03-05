@@ -1,0 +1,559 @@
+/*@media screen and (min-width: 800px) {*/
+/*html {
+  scroll-behavior: smooth;
+}*/
+body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #686868b4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.logo {
+  font-family: Times, Times New Roman, serif;
+  font-weight: 500;
+}
+h1 {
+  color: #fff;
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.8em;
+  padding-top: 2%;
+  text-align: center;
+  color: #111;
+}
+h3 {
+  font-size: 2.6em;
+  color: #111;
+}
+h4 {
+  font-size: 1.6em;
+  color: #fff;
+  margin:10px 0;
+
+}
+h5{
+  font-size:1.4em;
+  color: #fff;
+  margin:0 0 5px 0;
+}
+p {
+  line-height: 1.4;
+  letter-spacing: 0.07em;
+}
+section {
+  padding-bottom: 30px;
+}
+.sides,
+.gallery,
+.restmenu {
+  width:65%;
+  margin:0 auto ;
+}
+.center {
+  width: 60%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  font-weight: 300;
+}
+/* page animations */
+.animate__animated.animate__fadeInUp {
+  --animate-duration: 2s;
+  --animate-delay: 0.4s;
+}
+.hidden {
+  visibility: hidden;
+}
+.visible {
+  visibility: visible;
+}
+
+/*header style*/
+header {
+  position: relative;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2019/08/19/13/54/cocktail-4416506_960_720.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+header:after, #Menus:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000070;
+}
+header > *, #Menus > * {
+  z-index: 100;
+}
+nav {
+  margin: 4% auto;
+  width: 80%;
+}
+.logo {
+  margin: 8px 0;
+  float: left;
+  color: #fff;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
+.navbar {
+  float: right;
+  margin: 0;
+  overflow: hidden;
+}
+.navbar a {
+  display: inline-block;
+  color: #ccccccc0;
+  font-size: 0.85em;
+  text-decoration: none;
+  margin: 0 6px;
+  padding: 5px 2px;
+  transition: all 0.4s ease-in-out;
+}
+.navbar a:hover,
+.navbar a:active,
+.menutabs a:hover,
+.menutabs a:active {
+  color: #fff;
+  border-bottom: 2px solid #f80000;
+}
+.navbar .icon {
+  display: none;
+}
+/*body style*/
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.red {
+  color: #f80000;
+}
+a.started {
+  padding: 8px 20px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+.started:hover {
+  text-decoration: none;
+  background-color: #f80000;
+  border-color: #f80000;
+}
+
+.htext {
+  position: ABSOLUTE;
+  top: 320px;
+  text-align: center;
+  width: 100%;
+}
+/* section 1 booking form and about us */
+.booking {
+  width: 100%;
+}
+
+.bg-gray {
+  background-color: #f1f4ff;
+}
+
+.bookform {
+  width: 56%;
+  display: flex;
+  position: relative;
+  top: -40px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 5px 10px 40px #88888850;
+}
+form,
+.formtable {
+  width: 100%;
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.formtable div {
+  display: inline-block;
+  padding: 0 4px;
+  margin: 0 4px;
+}
+
+input,
+select,
+textarea {
+  padding: 9px 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  color: #ccc;
+}
+label {
+  padding: 5px;
+  font-size: 0.9em;
+  font-weight: 400;
+}
+.contactform input,
+.contactform textarea {
+  width: 80%;
+}
+.contactform input.button {
+  width: 80%;
+}
+.button {
+  margin: 15px 5px 5px 5px;
+  padding: 12px 50px;
+  background-color: #f80000;
+  color: #fff;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  text-transform: capitalize;
+  font-size: 0.8em;
+}
+
+.button:hover,
+input:hover,
+select:hover {
+  border: 1px solid red;
+}
+.left {
+  width: 39%;
+}
+.right {
+  width: 55%;
+}
+.left,
+.right {
+  display: inline-block;
+  vertical-align:top;
+  margin: 5px;
+  padding:10px 5px;
+
+}
+img {
+  border-radius: 5px;
+  box-shadow: 2px 5px 30px #44444430;
+  width: 100%;
+  float: none;
+}
+
+/* section 2 teams and section 3 rooms */
+figure {
+  width: 31%;
+  display: inline-block;
+  margin: 0 0.5%;
+  vertical-align: top;
+}
+.team {
+  color: #ccc;
+  padding: 8px 15px;
+  position: relative;
+  top: -70px;
+  background-color: #11111190;
+  line-height: 1.6;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.9em;
+}
+.team span {
+  font-size: 0.8em;
+  text-transform: capitalize;
+}
+.room {
+  padding: 10px 20px;
+  text-align: center;
+  line-height: 1.6;
+  text-transform: capitalize;
+  letter-spacing: 0.1em;
+}
+/* section 4 photo gallery*/
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin:0 auto;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 20px;
+  margin-top: -22px;
+  color: #ffffff90;
+  font-weight: bold;
+  font-size: 38px;
+  transition: all 0.7s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: #f8000090;
+}
+
+.text {
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 6px;
+  width: 6px;
+  margin: 0 3px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  transition: all 0.5s ease;
+}
+.dot.active, 
+.dot:hover {
+  border-color: #f80000;
+  background-color: #f80000;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 2s;
+  animation-name: fadeIn;
+  animation-duration: 2s;
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*section 5 menus */
+#Menus {
+  position: relative;
+  width: 100%;
+  background-image: url("https://cdn.pixabay.com/photo/2014/09/05/15/07/restaurant-436407_960_720.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+}
+.menutabs{
+  text-align: center;
+  overflow: hidden;
+}
+.menutabs button{
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f80000;
+  background: none;
+  border: none;
+  font-weight:500;
+  margin: 15px;
+  padding: 8px 4px;
+  letter-spacing: 0.1em;
+}
+.menutabs button:hover,
+.menutabs button.active{
+  color: #fff;
+  border-bottom: 2px solid #fff;
+
+}
+.tabdiv {
+  display: none;
+}
+.tabdiv.active{
+  display: block;
+}
+.hsides{
+  width: 95%;
+  margin:0 auto;
+}
+.half {
+  width:45%;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  font-size:0.8em;
+}
+.half p{
+  color: #ccc;
+}
+
+/*section 6 conact us */
+.contactform {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px 10px 10px 20px;
+  padding: 10px 20px;
+}
+.contactext {
+  padding-left:5%;
+  padding: 10% 0 10% 5%;
+  font-size: 1.1em;
+}
+
+/* footer */
+
+footer {
+  width: 100%;
+  background-color: #111;
+  font-size: 0.8em;
+}
+footer a {
+  color: #777777b4;
+}
+.fmain {
+  width: 60%;
+  margin: 0 auto;
+  padding: 30px 0 30px 20px;
+}
+
+.flinks li,
+.flinks li a {
+  text-decoration: underline;
+  list-style: none;
+  padding-bottom: 10px;
+}
+.flinks a:hover {
+  color: #fff;
+}
+.inline-footer {
+  display: inline-block;
+  width: 29%;
+  vertical-align: center;
+  margin: 1%;
+  padding: 0 0 0 2%;
+}
+.white {
+  color: #fff;
+}
+.fas {
+  padding-right: 15px;
+  color: #f80000;
+  font-size: 1.2em;
+}
+.social,
+.social a {
+  font-size: 1.2em;
+  padding: 15px 15px 0 10px;
+  color: #777777b4;
+}
+.social a:hover {
+  color: #f80000;
+}
+
+/* On smaller screens breakpoint 600px */
+@media screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+  .sides,
+  .center,
+  .gallery,
+  .restmenu,
+  .fmain {
+    width: 92%;
+  }
+  .left,
+  .right,
+  .half,
+  .inline-footer {
+    display: block;
+    width: 95%;
+    margin: 5px;
+    padding: 10px;
+  }
+  .flinks li,
+  .flinks a {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 2px;
+  }
+  .bookform {
+    width: 88%;
+    top: -70px;
+    padding: 0;
+  }
+  .formtable div {
+    margin: 2px;
+    padding: 2px;
+  }
+  #Rooms figure {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+  }
+  #Teams figure {
+    width: 43%;
+    margin: 0 12px;
+    padding: x0;
+  }
+  .prev,
+  .next,
+  .text {
+    font-size: 12px;
+  }
+  .navbar a {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+    font-size: 2em;
+  }
+  .navbar.responsive {
+    position: relative;
+  }
+  .navbar.responsive a.icon {
+    position: absolute !important;
+    right: 0;
+    top: 0;
+  }
+  .navbar a.icon:hover,
+  a.icon:active {
+    color: #f80000;
+    border: 0px !important;
+  }
+  .navbar.responsive a:not(a.icon) {
+    float: none;
+    display: block;
+    margin: 10px 50px;
+    padding: 5px 20px;
+  }
+}

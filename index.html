@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tech4Dev-Project1</title>
+    <meta charset="utf-8" />
+    <link rel="StyleSheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo"><span class="red">Hotel</span>Portal</div>
+            <div class="navbar" id="myTopnav">
+                <a href="#"> Home </a>
+                <a href="#about"> About </a>
+                <a href="#Teams"> Team </a>
+                <a href="#Rooms"> Rooms </a>
+                <a href="#Menus"> Menus </a>
+                <a href="#Events"> Events </a>
+                <a href="#Contact"> Contact </a>
+                <a class="started" href="#"> Get Started </a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="htext">
+            <h1>Stay With Us & Relax</h1>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="booking bg-gray">
+            <div class="bookform animate__animated hidden">
+                <form>
+                    <div class="formtable">
+                        <div>
+                            <label for="start">Check In</label><br />
+                            <input type="date" id="start" name="trip-start" />
+                        </div>
+                        <div>
+                            <label for="start">Check Out</label><br />
+                            <input type="date" id="end" name="trip-end" />
+                        </div>
+                        <div>
+                            <label for="adults">Adults</label><br />
+                            <select id="adults">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="kids">Kids</label><br />
+                            <select id="kids">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4+">4+</option>
+                            </select>
+                        </div>
+                        <div>
+                            <input type="submit" value="Check Availabilty" class="button" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="sides" id="about">
+                <div class="left animate__animated hidden">
+                    <h3>Hey there!</h3>
+                    <p>
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they
+                        live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                    </p>
+                    <div class="center">
+                        <button type="button" class="button">watch the video</button>
+                    </div>
+                </div>
+                <div class="right animate__animated hidden">
+                    <img src="https://cdn.pixabay.com/photo/2014/07/31/22/50/photographer-407068_960_720.jpg"
+                        alt="image" width="100%" />
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="gallery" id="Teams">
+                <h2 class="animate__animated">Leadership</h2>
+                <div>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2019/08/11/11/28/man-4398724_960_720.jpg"
+                            alt="gallery1" />
+                        <figcaption class="team">
+                            Name <br /><span>title description</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2020/06/12/10/50/dressed-5290056_960_720.jpg"
+                            alt="gallery2" />
+                        <figcaption class="team">
+                            Name <br /><span>title description</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2017/02/16/12/08/business-woman-2071334_960_720.jpg"
+                            alt="gallery3" />
+                        <figcaption class="team">
+                            Name <br /><span>title description</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2015/03/03/18/58/woman-657753_960_720.jpg"
+                            alt="gallery4" />
+                        <figcaption class="team">
+                            Name <br /><span>title description</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/17/22/01/man-5415572_960_720.jpg"
+                            alt="gallery5" />
+                        <figcaption class="team">
+                            Name <br /><span>title description</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2018/01/21/14/41/woman-3096753_960_720.jpg"
+                            alt="gallery6" />
+                        <figcaption class="team">
+                            Name <br /><span>title description</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="gallery" id="Rooms">
+                <h2 class="animate__animated hidden">Rooms & Suites</h2>
+                <div class="center animate__animated hidden">
+                    <p>
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they
+                        live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                    </p>
+                </div>
+                <div>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2016/04/15/11/43/hotel-1330834_960_720.jpg"
+                            alt="room1" />
+                        <figcaption class="room">
+                            single room <br /><span class="red"> $90 / per night</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2019/08/19/13/58/bed-4416515_960_720.jpg" alt="room2" />
+                        <figcaption class="room">
+                            family room <br /><span class="red"> $120 / per night</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="animate__animated hidden">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/10/11/39/hotel-595121_960_720.jpg"
+                            alt="room3" />
+                        <figcaption class="room">
+                            presidental room <br /><span class="red"> $250 / per night</span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray">
+            <div class="gallery">
+                <br />
+                <h2 class="animate__animated hidden">Photos</h2>
+                <div class="center animate__animated hidden">
+                    <p>
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they
+                        live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                    </p>
+                </div>
+                <div class="slideshow-container animate__animated hidden">
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2015/01/05/22/29/wellness-589774_960_720.jpg"
+                            style="width: 100%" />
+                        <div class="text">Caption 1</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2022/02/14/12/03/craniosacral-7012994_960_720.jpg"
+                            style="width: 100%" />
+                        <div class="text">Caption 2</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2022/01/30/12/39/mountains-6980701_960_720.jpg"
+                            style="width: 100%" />
+                        <div class="text">Caption 3</div>
+                    </div>
+                    <div class="mySlides fade">
+                        <img src="https://cdn.pixabay.com/photo/2020/07/07/13/52/woman-5380651_960_720.jpg"
+                            style="width: 100%" />
+                        <div class="text">Caption 4</div>
+                    </div>
+
+                    <a class="prev" onclick="nextSlide(-1)">&#10094;</a>
+                    <a class="next" onclick="nextSlide(1)">&#10095;</a>
+                </div>
+                <br />
+
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </section>
+        <section id="Menus">
+            <div class="restmenu">
+                <div class="center">
+                    <h2 class="white animate__animated hidden">Our Restaurant Menu</h2>
+                    <p class="white animate__animated hidden">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there
+                        live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics,
+                        a large language ocean.
+                    </p>
+                </div>
+                <div class="menutabs animate__animated hidden">
+                    <button href="#Foods" class="tablinks active" onclick="menuContent(event, 'Foods')">Foods</button>
+                    <button href="#Deserts" class="tablinks" onclick="menuContent(event, 'Deserts')">Deserts</button>
+                    <button href="#Drinks" class="tablinks" onclick="menuContent(event, 'Drinks')">Drinks</button>
+                </div>
+                <div id="Foods" class="tabdiv active animate__animated hidden" >
+                    <div class="hsides">
+                        <div class="half">
+                            <h4 class="red">$20.00</h4>
+                            <h5>Murgh Tikka Masala</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$35.00</h4>
+                            <h5>Fish Moilee</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$15.00</h4>
+                            <h5>Safed Gosht</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                        </div>
+                        <div class="half">
+                            <h4 class="red">$8.35</h4>
+                            <h5>Vegie Omelet</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$22.00</h4>
+                            <h5>Chorizo & Egg Omelet</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$12.00</h4>
+                            <h5>French Toast Combo</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div id="Deserts" class="tabdiv">
+                    <div class="hsides">
+                        <div class="half">
+                            <h4 class="red">$11.00</h4>
+                            <h5>Banana Splita</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$55.00</h4>
+                            <h5>Sticky Toffee Pudding</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$25.00</h4>
+                            <h5>Pecan</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                        </div>
+                        <div class="half">
+                            <h4 class="red">$41.00</h4>
+                            <h5>Apple Strudel</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">7.00</h4>
+                            <h5>Pancakes</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$22.00</h4>
+                            <h5>Ice Cream Sundae</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                        </div>
+                    </div>
+                </div>
+                <div id="Drinks" class="tabdiv">
+                    <div class="hsides">
+                        <div class="half">
+                            <h4 class="red">$20.00</h4>
+                            <h5>Spring Water</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$35.00</h4>
+                            <h5>Coke, Diet Coke, Coke Zero</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$15.00</h4>
+                            <h5>Orange Fanta</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                        </div>
+                        <div class="half">
+                            <h4 class="red">$20.00</h4>
+                            <h5>Lemonade, Lemon Squash</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$35.00</h4>
+                            <h5>Lemon, Lime & Bitters</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                            <h4 class="red">$15.00</h4>
+                            <h5>Sparkling Mineral Water</h5>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia,
+                                there live the blind texts.</p><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="gallery" id="Contact">
+                <h2 class="animate__animated hidden">Contact Us</h2>
+                <div class="center animate__animated hidden">
+                    <p>
+                        Far far away, behind the word mountains, far from the countries
+                        Vokalia and Consonantia, there live the blind texts. Separated they
+                        live in Bookmarksgrove right at the coast of the Semantics, a large
+                        language ocean.
+                    </p>
+                </div>
+            </div>
+            <div class="sides">
+                <div class="left animate__animated hidden">
+                    <div class="contactext">
+                        <p>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span class="red">Address:</span><br>
+                            198 West 21th Street,<br />
+                            Suite 721 New York NY 10016<br><br>
+                        </p>
+                        <p>
+                            <i class="fas fa-phone-alt"></i><span class="red">Phone:</span><br>
+                            (+1) 435 3533 222<br><br>
+                        </p>
+                        <p>
+                            <i class="fas fa-envelope"></i><span class="red">Email:</span><br>
+                            info@yourdomain.com
+                        </p>
+                        <div class="social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="right animate__animated hidden">
+                    <div class="contactform">
+                        <form>
+                            <label for="name"> Name:</label><br />
+                            <input type="text" id="name" name="firstname" value="name" required /><br />
+                            <label for="Phone">Phone:</label><br />
+                            <input type="number" id="phone" name="phone" value="phone" required /><br />
+                            <label for="email">E-mail:</label><br />
+                            <input type="email" id="email" name="email" value="email" required /><br />
+                            <label for="message">Message:</label><br />
+                            <textarea name="message" id="messagetext" rows="5" required>
+Type your message here </textarea><br />
+                            <div class="center"><input type="submit" class="button" /></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="fmain">
+            <div class="inline-footer">
+                <h4><span class="red">Hotel</span>Portal</h4>
+                <p>
+                    Far far away, behind the word mountains, far from the countries
+                    Vokalia and Consonantia, there live the blind texts.
+                </p>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="inline-footer">
+                <p>
+                    <i class="fas fa-map-marker-alt"></i><span class="white">Address:</span><br />
+                    198 West 21th Street,<br />
+                    Suite 721 New York NY 10016
+                </p>
+
+                <p>
+                    <i class="fas fa-phone-alt"></i><span class="white">Phone:</span><br />(+1) 435 3533 222
+                </p>
+
+                <p>
+                    <i class="fas fa-envelope"></i><span class="white">Email:</span><br />info@yourdomain.com
+                </p>
+            </div>
+            <div class="inline-footer">
+                <div class="flinks">
+                    <ul>
+                        <li><a href="#"> Home </a></li>
+                        <li><a href="#about"> About </a></li>
+                        <li><a href="#Teams"> Team </a></li>
+                        <li><a href="#Rooms"> Rooms </a></li>
+                        <li><a href="#Menus"> Menus </a></li>
+                        <li><a href="#Events"> Events </a></li>
+                        <li><a href="#Contact"> Contact </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="center white">
+            Copyright &copy; 2022 All Rights Reserved |
+            <a href="http://">HotelPortal.com</a>
+        </div>
+    </footer>
+    <script type="text/javascript" src="myscript.js"></script>
+</body>
+</html>
