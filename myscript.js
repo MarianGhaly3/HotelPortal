@@ -119,11 +119,9 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
 });
 
 // menu tabcontent  hide and display
-
 function menuContent(evt, menuName) {
   // Declare all variables
   var i, tabdiv, tablinks;
-
   tabdiv = document.getElementsByClassName("tabdiv");
   for (i = 0; i < tabdiv.length; i++) {
     tabdiv[i].style.display = "none";
@@ -131,9 +129,9 @@ function menuContent(evt, menuName) {
 
   tablinks = document.getElementsByClassName("tablinks");
   for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace("active", "");
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
 
-  document.getElementById(menuName).style.display = "block";
+  document.getElementById(menuName).style.display = " block";
   evt.currentTarget.className += " active";
 }
